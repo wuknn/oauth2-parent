@@ -1,0 +1,16 @@
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  port: 8080
+spring:
+  application:
+    name: auth-server
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+third-part:
+  github:
+    client_id: 2ad1009728d12b86e0b3
+    client_secret: 44b7e360a310e0bf5748d15d271a790676b21221

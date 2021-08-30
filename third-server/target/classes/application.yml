@@ -1,0 +1,12 @@
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  port: 8082
+spring:
+  application:
+    name: third-server
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>8082</title>
+</head>
+<body>
+
+本系统作为OAuth2提供方登录模式：
+<hr/>
+【授权码模式】<a href="http://localhost:8080/oauth/authorize?client_id=third01&response_type=code&scope=all&redirect_uri=http://localhost:8082/notify.html">第三方登录</a>
+<br/>
+【密码模式】<a href="http://localhost:8080/oauth/authorize?client_id=third01&response_type=code&scope=all&redirect_uri=http://localhost:8082/notify.html">第三方登录</a>
+<br/>
+<br/>
+<br/>
+第三方作为OAuth2提供方登录模式：
+<hr/>
+<a href="https://github.com/login/oauth/authorize?client_id=2ad1009728d12b86e0b3&redirect_uri=http://localhost:8080/oauth/redirect">github账号登录</a>
+
+<h1 th:text="${msg}"></h1>
+</body>
+</html>
