@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.oauth2.example.dao.UserDao">
+	<!-- 通过手机号获取用户 -->
+	<select id="findByMobile" resultType="com.oauth2.example.model.UserModel">
+		SELECT * FROM USER UR
+		WHERE UR.MOBILE = #{mobile}
+	</select>
+
+	<!-- 通过账号获取用户 -->
+	<select id="findByUsername" resultType="com.oauth2.example.model.UserModel">
+	SELECT * FROM USER UR
+		WHERE UR.USERNAME = #{username}
+	</select>
+
+</mapper>
